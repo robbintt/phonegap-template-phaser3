@@ -1,8 +1,13 @@
 
-
-document.addEventListener("deviceready",function() {
+var startEvent = "DOMContentLoaded";
+if(window.cordova){
+    startEvent = "deviceready";
+}
+document.addEventListener(startEvent,function() {
     
-    var game = new Phaser.Game(320, 640, Phaser.AUTO, '', { preload: preload, create: create });
+    
+    var game = new Phaser.Game(window.innerWidth, window.innerHeight, Phaser.AUTO, '',
+                                { preload: preload, create: create });
 
     function preload () {
         game.load.image('logo', 'phaser.png');
