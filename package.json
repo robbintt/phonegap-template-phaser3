@@ -1,6 +1,6 @@
 {
   "name": "phonegap-template-phaser",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A template for getting started with phaser in a phonegap/cordova app.",
   "repository": {
     "type": "git",
